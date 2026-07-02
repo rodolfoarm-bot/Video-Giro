@@ -1,4 +1,3 @@
-# Video-Giro
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -38,11 +37,11 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
 #play-ov .btn{margin-top:6px;background:#fff;color:var(--accent);font-weight:800;font-size:17px;padding:13px 38px;border-radius:999px;box-shadow:0 10px 26px rgba(0,0,0,.25)}
 #ctrl{position:absolute;top:10px;right:10px;z-index:80;display:none}
 #ctrl button{background:rgba(14,11,31,.55);color:#fff;border:none;border-radius:8px;font-size:11px;font-weight:800;padding:6px 10px;cursor:pointer}
-
+ 
 /* ===== moldura de celular ===== */
 .phone{position:absolute;top:34px;left:50%;transform:translateX(-50%);width:320px;height:626px;background:var(--bg);border-radius:36px;border:8px solid #1E1B4B;overflow:hidden;box-shadow:0 26px 60px rgba(30,27,75,.3);display:flex;flex-direction:column}
 .phone .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:108px;height:19px;background:#1E1B4B;border-radius:0 0 12px 12px;z-index:9}
-
+ 
 /* ===== COMPONENTES REAIS DO APP ===== */
 .tb{background:var(--topbar-bg);padding:26px 14px 12px;flex-shrink:0}
 .tb-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
@@ -80,7 +79,7 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
 .tam-chip{font-size:8.5px;font-weight:600;padding:1.5px 6px;border-radius:6px;border:1px solid var(--border);color:var(--text2);background:var(--surface2)}
 .pcard-preco{font-size:12.5px;font-weight:700;color:var(--accent)}
 .pfoto{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
-
+ 
 /* ===== CENA 1: abertura ===== */
 #s1{background:var(--topbar-bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
 #s1 .logo{width:118px;height:118px;border-radius:32px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:72px;font-weight:800;color:var(--accent);box-shadow:0 20px 50px rgba(0,0,0,.3);transform:scale(.6);opacity:0;transition:all .7s cubic-bezier(.2,1.4,.4,1)}
@@ -200,14 +199,14 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
   <div id="stage">
     <div id="prog"></div>
     <div id="ctrl"><button onclick="reiniciar()">↺ Reiniciar</button></div>
-
+ 
     <!-- CENA 1 -->
     <div class="scene" id="s1">
       <span class="fig f1">🧸</span><span class="fig f2">👶</span><span class="fig f3">👗</span><span class="fig f4">🧦</span>
       <div class="logo">G</div><div class="nome">Giro</div>
       <div class="tag">A loja infantil que gira sozinha</div>
     </div>
-
+ 
     <!-- CENA 2 -->
     <div class="scene" id="s2">
       <h2>Sua loja vende pelo WhatsApp…<br><em>mas o estoque vive na sua cabeça?</em></h2>
@@ -217,7 +216,7 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
         <div class="dor d3"><span style="font-size:22px">🗒️</span> Caderninho e memória não dão conta</div>
       </div>
     </div>
-
+ 
     <!-- CENA 3 · Cadastrar (layout real) -->
     <div class="scene" id="s3" style="background:var(--bg)">
       <div class="phone"><div class="notch"></div>
@@ -254,7 +253,7 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
         </nav>
       </div>
     </div>
-
+ 
     <!-- CENA 4 · Estoque (layout real) -->
     <div class="scene" id="s4" style="background:var(--bg)">
       <div class="phone"><div class="notch"></div>
@@ -298,7 +297,7 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
         </nav>
       </div>
     </div>
-
+ 
     <!-- CENA 5 · WhatsApp -->
     <div class="scene" id="s5">
       <div class="phone"><div class="notch"></div>
@@ -324,7 +323,7 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
         </div>
       </div>
     </div>
-
+ 
     <!-- CENA 6 · Vendas (layout real) -->
     <div class="scene" id="s6" style="background:var(--bg)">
       <div class="phone"><div class="notch"></div>
@@ -358,7 +357,7 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
         </nav>
       </div>
     </div>
-
+ 
     <!-- CENA 7 -->
     <div class="scene" id="s7">
       <div class="logo">G</div>
@@ -368,9 +367,7 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
       <div class="li l3">📦 Estoque e vendas sob controle</div>
       <div class="cta">Chame no WhatsApp e experimente</div>
     </div>
-
-    <div id="cap"><span id="cap-tx"></span></div>
-
+ 
     <div id="play-ov" onclick="iniciar()">
       <div class="g">G</div>
       <h1>Giro</h1>
@@ -379,7 +376,7 @@ html,body{height:100%;background:#0E0B1F;font-family:-apple-system,BlinkMacSyste
     </div>
   </div>
 </div>
-
+ 
 <script>
 function fit(){
   const st=document.getElementById('stage');
@@ -387,22 +384,18 @@ function fit(){
   st.style.transform='scale('+s+')';
 }
 addEventListener('resize',fit);fit();
-
+ 
 const T=[];
 function at(ms,fn){T.push([ms,fn]);}
 function cena(id){document.querySelectorAll('.scene').forEach(s=>s.classList.remove('on'));document.getElementById(id).classList.add('on');}
-function leg(txt){
-  const el=document.getElementById('cap-tx');
-  el.classList.remove('on');
-  setTimeout(()=>{if(txt){el.textContent=txt;el.classList.add('on');}},300);
-}
+function leg(txt){/* legendas removidas — adicione narração/legendas no CapCut */}
 function fase(id,cls){document.getElementById(id).classList.add(cls);}
 function bolha(id){
   const b=document.getElementById(id);if(b)b.classList.add('show');
   const w=document.getElementById('wa-body');
   if(w)setTimeout(()=>{w.scrollTo({top:w.scrollHeight,behavior:'smooth'});},60);
 }
-
+ 
 const DUR=72000;
 /* CENA 1 · 0–6s */
 at(0,   ()=>{cena('s1');leg('Conheça o Giro 💜');});
@@ -434,7 +427,7 @@ at(60400,()=>{document.getElementById('s6').classList.remove('press');fase('s6',
 at(63400,()=>{leg('…conclui a venda e o estoque baixa sozinho 🎉');fase('s6','toast');});
 /* CENA 7 · 67–72s */
 at(67000,()=>{cena('s7');leg('');});
-
+ 
 let timers=[],t0=0,rafId=null;
 function iniciar(){
   document.getElementById('play-ov').style.display='none';
@@ -457,7 +450,6 @@ function limpar(){
   document.querySelectorAll('.scene').forEach(s=>s.classList.remove('on','foto','ia','tags','ok','grid','alerta','ped','press','atend','toast'));
   document.querySelectorAll('.bl,.digitando').forEach(b=>b.classList.remove('show'));
   const w=document.getElementById('wa-body'); if(w)w.scrollTop=0;
-  document.getElementById('cap-tx').classList.remove('on');
   document.getElementById('prog').style.width='0%';
 }
 function reiniciar(){rodar();}
